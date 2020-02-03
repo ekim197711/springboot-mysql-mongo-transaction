@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+    - 27017:27017
+
+  mysql:
+    image: mysql:latest
+    environment:
+    - MYSQL_ROOT_PASSWORD=mypwd
+    ports:
+    - 3306:3306
